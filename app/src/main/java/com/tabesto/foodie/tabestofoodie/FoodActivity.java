@@ -27,9 +27,13 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
+import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;
 
 public class FoodActivity extends AppCompatActivity {
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.recyclerview_food)
     RecyclerView rvFood;
 
@@ -39,7 +43,6 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
         ButterKnife.bind(this);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         initList();
     }
@@ -70,7 +73,11 @@ public class FoodActivity extends AppCompatActivity {
     private void initList() {
         rvFood.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         final List<Food> foodList = initFoodList();
-        rvFood.setAdapter(new FoodAdapter(this, foodList));
+
+        FoodAdapter adapter = new FoodAdapter(this, foodList);
+        AlphaInAnimationAdapter alphaAdapter = new AlphaInAnimationAdapter(adapter);
+        alphaAdapter.setFirstOnly(false);
+        rvFood.setAdapter(new ScaleInAnimationAdapter(alphaAdapter));
         RecyclerItemClickSupport.addTo(rvFood).setOnItemClickListener(new RecyclerItemClickSupport.OnItemClickListener() {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
@@ -84,7 +91,6 @@ public class FoodActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

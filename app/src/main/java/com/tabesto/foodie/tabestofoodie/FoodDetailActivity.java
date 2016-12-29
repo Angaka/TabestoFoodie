@@ -3,6 +3,8 @@ package com.tabesto.foodie.tabestofoodie;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +21,9 @@ import butterknife.ButterKnife;
 
 public class FoodDetailActivity extends AppCompatActivity {
 
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
     @BindView(R.id.imageview_food)
     ImageView imgViewFood;
     @BindView(R.id.textview_food_name)
@@ -34,7 +39,12 @@ public class FoodDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food_detail);
         ButterKnife.bind(this);
 
-        Food food = (Food) Parcels.unwrap(getIntent().getParcelableExtra("food"));
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        Food food = Parcels.unwrap(getIntent().getParcelableExtra("food"));
+        setTitle(food.getName());
         Glide.with(this)
                 .load(food.getImage())
                 .centerCrop()
@@ -43,6 +53,16 @@ public class FoodDetailActivity extends AppCompatActivity {
         tvFoodName.setText(food.getName());
         tvFoodDesc.setText(food.getDescription());
         tvFoodPrice.setText(String.valueOf(food.getPrice()) + " €");
-        
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // handle arrow click here
+        if (item.getItemId() == android.R.id.home) {
+            finish(); // close this activity and return to preview activity (if there is any)
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

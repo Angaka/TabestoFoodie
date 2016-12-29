@@ -35,4 +35,6 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'org.parceler:parceler-api:1.1.6'
     compile 'com.rohit.recycleritemclicksupport:recycleritemclicksupport:1.0.1'
+
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
 }
