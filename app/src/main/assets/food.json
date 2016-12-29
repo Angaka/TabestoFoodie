@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Kebab",
+    "price": 6.5,
+    "image": "drawable/img_kebab",
+    "description": "The sliced meat of a döner kebab may be served on a plate with various accompaniments, stuffed into a pita or other type of bread as a sandwich, or wrapped in a thin flatbread such as lavash or yufka, known as a dürüm. Since the early 1970s, the sandwich or wrap form has become popular around the world as a fast food dish sold by kebab shops, and is often called simply a kebab. The sandwich generally contains salad or vegetables, which may include tomato, lettuce, cabbage, onion with sumac, fresh or pickled cucumber, or chili, and various types of sauces."
+  },
+  {
+    "name": "Bistec",
+    "price": 20.3,
+    "image": "drawable/img_bistec",
+    "description": "Not all tourists realise that grilled steak is very popular in Tuscany and, under names such as carne alla brace or carne alla griglia, no doubt has been, in one form or another, since time immemorial. One of the most traditional grilled steaks in Tuscany is the tagliata Toscana which is basically a simple grilled steak, served cut into slices and moistened with olive oil and fresh rosemary. However, in the early 19 C, the English settled in and around Florence in large numbers and introduced new cuts of beef, including the T-bone and porter house steaks, and the bistecca alla fiorentina, “florentine steak“, often known outside Tuscany simply as a fiorentina (Florentine), was born. Fanfani’s dictionary of 1863 describes bistecca alla fiorentina as a neologism dating from 1823, the word bistecca being of obvious English origin. Be that as it may, bistecca alla fiorentina is now a famous native dish with closely defined rules regarding its preparation. It has to be admitted that getting a good fiorentina is partly a matter of luck, whether you prepare it yourself or order it in a restaurant. When eating out, try to get a recommendation from local people on where to go for your fiorentina."
+  },
+  {
+    "name": "Burger",
+    "price": 8.8,
+    "image": "drawable/img_burger",
+    "description": "Fresh crispy bun , lettuce leaves , pickles , onion and a small patty flavored with mayonnaise and ketchup — this is a classic portrait of a burger , the most common «fast» food in the United States , from which daily poisoning in hospital beds are tens of thousands of Americans"
+  },
+  {
+    "name": "Crepes",
+    "price": 5.5,
+    "image": "drawable/img_crepes",
+    "description": "Crêpes are made by pouring a thin liquid batter onto a hot frying pan or flat circular hot plate, often with a trace of butter or oil on the pan's surface. Common fillings for meal crêpes include: cheese, ham, spinach, eggs, ratatouille, and various meat products.When they are sweet, they can be a dessert. They can be filled with various other sweet items: jam, melted chocolate, dairy, ice cream, Nutella, bananas, berries, nuts, cinnamon etc. Popular sweet toppings include sugar (granulated or powdered), maple syrup, lemon juice, whipped cream, fruit spreads, sliced soft fruits, etc."
+  },
+  {
+    "name": "Glace",
+    "price": 3.8,
+    "image": "drawable/img_glace",
+    "description": "Rich and creamy, mellow and smooth, this slow-churned milk chocolate ice cream is the chocolate purist’s choice. Nothing gets in the way of this All-American favorite. It might just win some points with the vanilla ice cream lovers too! A delectable dessert option for any night of the week."
+  },
+  {
+    "name": "Plateau sushi",
+    "price": 15.85,
+    "image": "drawable/img_plateau_sushi",
+    "description": "Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari (しゃり) or sumeshi (酢飯)). Although commonly mistaken for sushi, sashimi, which is also a Japanese delicacy, consists of thinly sliced raw meat or fish and may or may not be served with rice. Sushi can be prepared with either brown or white rice. It is often prepared with raw seafood, but some common varieties of sushi use cooked ingredients and many are vegetarian. Sushi is often served with pickled ginger, wasabi, and soy sauce. Popular garnishes are often made using daikon."
+  },
+  {
+    "name": "Donut",
+    "price": 2.40,
+    "image": "drawable/img_donut",
+    "description": "The doughnut is popular in many countries and prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty outlets. Doughnuts are usually deep-fried from a flour dough, and typically either ring-shaped or without a hole, and often filled. Other types of batters can also be used, and various toppings and flavorings are used for different types, such as sugar, chocolate, or maple glazing. In addition to flour, doughnuts may also include such ingredients as water, leavening, eggs, milk, sugar, oil/shortening, natural flavors and/or artificial flavors"
+  },
+  {
+    "name": "Macaron",
+    "price": 1.5,
+    "image": "drawable/img_macaron",
+    "description": "French macarons are thin, flavorful meringue cookies that are sandwiched together with some kind of filling. The meringues are what make the cookies unique. They have a smooth, crisp shell and a moist, chewy interior. They are made with egg whites and lots of ground nuts, which helps them to attain that chewy texture without drying out and becoming too crispy, like a simple meringue cookie made with just egg whites and sugar.  The fillings can be almost anything that will stay between the cookies, from jams and preserves to caramel to buttercream frosting. I’ve even used Nutella to finish off a batch of macarons before. Although they can come in any size, macarons are typically small enough to be eaten in one or two bites."
+  },
+  {
+    "name": "Pizza",
+    "price": 15.20,
+    "image": "drawable/img_pizza",
+    "description": "Pizza — known to the whole world the national dish of Italy in the form of an open round cake covered with the classic recipe tomato and melted cheese (usually mozzarella). This beguiling culinary professional language called topping.It is believed that the prototype pizza served on a table to the ancient Greeks and the Romans, some of the dishes they prepared for bread chunks. And the official capital of the Italian dishes calls Naples. There even existed profession «pizzaioli» — so called people who were prepared pizza for peasants. This dish was invented after the first time in 1552 was brought to Europe from Peru tomatoes. Besides tomatoes, Neapolitan pizza filled with cheese, seafood, meat, mushrooms and vegetables."
+  },
+  {
+    "name": "Coffee",
+    "price": 2,
+    "image": "drawable/img_coffee",
+    "description": "A coffee’s flavor describes the overall and combined sensations/perceptions of the coffee’s distinctive aromatic and taste characteristics, the fusion of body, acidity, aroma, bitterness, sweetness, and aftertaste. A well-balanced coffee is one in which no single flavor characteristic dominates and/or overpowers/overwhelms the others."
+  }
+]
