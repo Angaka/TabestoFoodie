@@ -2,10 +2,13 @@ package com.tabesto.foodie.tabestofoodie;
 
 import android.graphics.drawable.Drawable;
 
+import org.parceler.Parcel;
+import org.parceler.ParcelConstructor;
+
 /**
  * Created by beau- on 26/12/2016.
  */
-
+@Parcel
 public class Food {
 
     private String  name;
@@ -13,6 +16,7 @@ public class Food {
     private int image;
     private String  description;
 
+    @ParcelConstructor
     public Food(String name, double price, int image, String description) {
         this.name = name;
         this.price = price;

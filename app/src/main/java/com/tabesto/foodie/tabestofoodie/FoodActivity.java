@@ -1,5 +1,6 @@
 package com.tabesto.foodie.tabestofoodie;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -10,12 +11,15 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.rohit.recycleritemclicksupport.RecyclerItemClickSupport;
 import com.tabesto.foodie.tabestofoodie.helpers.JsonLoader;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -65,7 +69,16 @@ public class FoodActivity extends AppCompatActivity {
 
     private void initList() {
         rvFood.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        rvFood.setAdapter(new FoodAdapter(this, initFoodList()));
+        final List<Food> foodList = initFoodList();
+        rvFood.setAdapter(new FoodAdapter(this, foodList));
+        RecyclerItemClickSupport.addTo(rvFood).setOnItemClickListener(new RecyclerItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                Intent intent = new Intent(FoodActivity.this, FoodDetailActivity.class);
+                intent.putExtra("food", Parcels.wrap(foodList.get(position)));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
