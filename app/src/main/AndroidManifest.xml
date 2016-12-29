@@ -12,6 +12,7 @@
         <activity
             android:name=".FoodActivity"
             android:label="@string/app_name"
+            android:icon="@drawable/icon_tabesto_food"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

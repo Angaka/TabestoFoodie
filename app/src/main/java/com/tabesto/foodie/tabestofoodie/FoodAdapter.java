@@ -64,7 +64,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             .into(holder.imgViewFood);
         holder.tvFoodName.setText(food.getName());
         holder.tvFoodDesc.setText(food.getDescription());
-        holder.tvFoodPrice.setText(String.valueOf(food.getPrice()) + " €");
+        holder.tvFoodPrice.setText(String.format("%.2f €", food.getPrice()));
     }
 
     @Override

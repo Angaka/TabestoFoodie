@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -58,6 +59,68 @@
                 android:textAlignment="inherit"
                 android:text="Food description"
                 android:textSize="14sp"/>
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textview_food_name_qty"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Food name quantity"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black" />
+                    <me.himanshusoni.quantityview.QuantityView
+                        android:id="@+id/quantityview_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:qv_addButtonBackground="@color/colorPrimary"
+                        app:qv_addButtonTextColor="@android:color/white"
+                        app:qv_minQuantity="1"
+                        app:qv_quantity="1">
+                    </me.himanshusoni.quantityview.QuantityView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Total"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textview_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Order now"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"/>
         </LinearLayout>
     </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

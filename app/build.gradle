@@ -33,8 +33,12 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'org.parceler:parceler-api:1.1.6'
+    compile "org.parceler:parceler-api:1.0.4"
+    provided "org.parceler:parceler:1.0.4"
     compile 'com.rohit.recycleritemclicksupport:recycleritemclicksupport:1.0.1'
 
     compile 'jp.wasabeef:recyclerview-animators:2.2.5'
+    compile 'me.himanshusoni.quantityview:quantity-view:1.1.6'
+
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
 }
